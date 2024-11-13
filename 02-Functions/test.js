@@ -184,6 +184,7 @@ function convertLength(length, from, to) {
 
 console.log(convertLength(5, 'lbs', 'lbs'));
 console.log(convertLength(5, 'km', 'km'));
+console.log(convertLength(32, 'km', 'miles'));
  
 
 
