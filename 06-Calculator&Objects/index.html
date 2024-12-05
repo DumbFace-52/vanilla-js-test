@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Princess">
+    <meta name="description" content="Using Objects to Update a Calcultor in Vanilla JavaScript">
+    <title>Updated Digital Calculator</title>
+    <!-- Link to External script -->
+    <script src="calculator.js"></script>
+</head>
+<body>
+    <!-- Main Content -->
+    <header>
+        <h1>Updated Digital Calculator</h1>
+    </header>
+
+    <main>
+        <section>
+            <!-- Calculator Buttons -->
+        <div class="btn--calculator_buttons">
+            <p>
+                <button onclick="updateCalculator('0');">0</button>
+                <button onclick="updateCalculator('1');">1</button>
+                <button onclick="updateCalculator('2');">2</button>
+            </p>
+            <p>
+                <button onclick="updateCalculator('3')">3</button>
+                <button onclick="updateCalculator('4')">4</button>
+                <button onclick="updateCalculator('5')">5</button>
+            </p>
+            <p>
+                <button onclick="updateCalculator('6')">6</button>
+                <button onclick="updateCalculator('7')">7</button>
+                <button onclick="updateCalculator('8')">8</button>
+                <button onclick="updateCalculator('9')">9</button>
+            </p>
+            <p>
+                <button onclick="updateCalculator('.');">.</button>
+
+                <button onclick="updateCalculator('+');">+</button>
+
+                <button onclick="updateCalculator('-');">-</button>
+
+                <button onclick="updateCalculator('*');">*</button>
+
+                <button onclick="updateCalculator('/');">/</button>
+            </p>
+
+            <p>
+                <button onclick="calculation = ''; clear()">C</button>
+
+                <button onclick="
+                // Note: eval() takes a string and runs it as code.
+                // Avoid using eval() in real world projects since
+                // it can potentially be given harmful code to run.
+                // Only use eval() for learning purposes.; 
+                calculation = eval(calculation);
+                console.log(calculation);">=</button>
+            </p>
+        </div> 
+        </section>
+    </main>
+
+</body>
+</html>

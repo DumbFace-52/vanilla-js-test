@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Princess">    
+    <meta name="description" content="Using Objects in a Coin Flip mini game">
+    <title>Coin Flip Mini Game</title>
+    <!-- Link to Boxicons -->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <!-- Link to External Script -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Coin Flip Game</h1>
+    </header>
+
+    <main>
+        <!-- Main Content -->
+        <button onclick="playGame('heads')"><i class="bx bx-user"></i> Head</button>
+        <button onclick="playGame('tails')"><i class="bx bx-coin"></i> Tails</button>
+        <!-- Reset Button -->
+        <button class="btn" title="Reset" onclick="
+        theScore.wins = 0;
+        theScore.losses = 0;
+        localStorage.removeItem('theScore');                 
+    ">
+        <i class="bx bx-reset"></i>
+    </button>
+    </main>
+</body>
+</html>
